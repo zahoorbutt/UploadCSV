@@ -1,0 +1,39 @@
+﻿@model System.Data.DataTable
+    @using System.Data;
+@{
+    ViewBag.Title = "Uploaded File";
+}
+
+
+<h3>@ViewBag.Success</h3>
+
+<h3>@ViewBag.Error</h3>
+<p>
+    @Html.ActionLink("Upload File Again","Index")
+</p>
+<h2>Uploaded Data</h2>
+
+<table>
+    <thead>
+        <tr>
+            @foreach (DataColumn col in Model.Columns)
+            {
+                <th>@col.ColumnName</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (DataRow row in Model.Rows)
+            {
+            <tr>
+                @foreach (DataColumn col in Model.Columns)
+                {
+                    <td>@row[col.ColumnName]</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
