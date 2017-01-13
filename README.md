@@ -8,7 +8,7 @@ Let me know your thoughts @ zahoor_butt@hotmail.com
 
 FILE REQUIREMENTS
 •	File will be fixed column comma separated file with the following columns
-o	date, category, employee name, employee address, expense description, pre-tax amount, tax name, and tax amount
+o	date, category, employee name, employee address, expense description, pre-tax amount, tax name, and tax amount( see file sample data_example.csv)
 •	Assumptions 
 o	Columns will always be in same order
 o	There will be data in each column
